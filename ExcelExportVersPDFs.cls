@@ -9,9 +9,9 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 Sub ExportToPDFs()
 ' PDF Export Macro
-' Changez C:\temp\ pour le répertoire de votre choix
-' Changez les cellules à imprimer
-' Sauvegarde chaque Worksheet vers un fichier PDF séparé.
+' Changez C:\temp\ pour le rÃ©pertoire de votre choix
+' Changez les cellules Ã  imprimer
+' Sauvegarde chaque Worksheet vers un fichier PDF sÃ©parÃ©.
  
 Dim ws As Worksheet
  
@@ -28,7 +28,7 @@ With ActiveSheet.PageSetup
 End With
 
 ActiveSheet.ExportAsFixedFormat Type:=xlTypePDF, _
-Filename:="C:\votrerepertoire\votrefichier.pdf", _
+Filename:="C:\temp\" + nm + ".pdf", _
 Quality:=xlQualityStandard, IncludeDocProperties:=True, _
 IgnorePrintAreas:=False, OpenAfterPublish:=False
  
