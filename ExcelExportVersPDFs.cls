@@ -2,7 +2,7 @@ VERSION 1.0 CLASS
 BEGIN
   MultiUse = -1  'True
 END
-Attribute VB_Name = "Feuil7"
+Attribute VB_Name = "ExcelExportVersPDFs"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
@@ -12,6 +12,7 @@ Sub ExportToPDFs()
 ' Changez C:\temp\ pour le répertoire de votre choix
 ' Changez les cellules à imprimer
 ' Sauvegarde chaque Worksheet vers un fichier PDF séparé.
+' Changer l'aire d'impression sous Print Area
  
 Dim ws As Worksheet
  
