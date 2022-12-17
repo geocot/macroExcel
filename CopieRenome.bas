@@ -1,12 +1,11 @@
-Attribute VB_Name = "Module1"
-   
 Public Sub CopieRenome()
 Dim Index As Integer
+Index = 1
 
-For Index = 45 To 58
+Do
     Sheets("Base").Copy After:=Sheets(Sheets.Count)
-    ActiveSheet.Name = Sheets("Liste d�roulante").Range("A" & Index).Value
-    
-Next
+    ActiveSheet.Name = Sheets("Liste déroulante").Range("A" & Index).Value
+    Index = Index + 1
+Loop While Sheets("Liste déroulante").Range("A" & Index).Value <> ""
 
 End Sub
